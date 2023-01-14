@@ -153,3 +153,19 @@
 # first = [1, 2, 3]
 # tuple1 = tuple(first)
 # print(tuple1)
+
+# Directory Traversal / scanning
+import os
+img = []
+for(root, dirs, files) in os.walk("D:"):
+    # print(dirs)
+    for file in files:
+        if('.png' in file):
+            img.append(file)
+# print(img)
+# for index, value in enumerate(img):
+#     print("Index: ", index, " value: ", value)
+
+cwd = os.getcwd()
+# print(cwd)
+print(os.name)
